@@ -18,9 +18,9 @@ namespace osum.Support.Desktop
 {
     public class GameWindowDesktop : GameWindow
     {
-        /// <summary>Creates a 1280x720 window with the specified title.</summary>
-        public GameWindowDesktop()
-            : base(1280, 720, GraphicsMode.Default, "osu!stream")
+        /// <summary>Creates a window with the specified title.</summary>
+        public GameWindowDesktop(bool fullscreen = false, int width = 1280, int height = 720)
+            : base(width, height, GraphicsMode.Default, "osu!stream", fullscreen ? GameWindowFlags.Fullscreen : GameWindowFlags.Default)
         {
             VSync = VSyncMode.On;
             //GameBase.WindowSize = new Size(960,640);

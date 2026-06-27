@@ -15,7 +15,7 @@ namespace osum.Support.Desktop
 
         public override void Run()
         {
-            Window = new GameWindowDesktop();
+            Window = new GameWindowDesktop(Config.GetValue("Fullscreen", false), Config.GetValue("WindowWidth", 1280), Config.GetValue("WindowHeight", 720));
             Window.Run();
             Director.CurrentMode.Dispose();
         }

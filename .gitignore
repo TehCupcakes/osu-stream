@@ -19,6 +19,7 @@ osum/osu!m-desktop.pidb
 osum/osu!m-desktop.userprefs
 *.vsp
 osum.ipa
+osu!stream/Resources/Resource.designer.cs
 
 Output/*
 *.userprefs
@@ -35,4 +36,8 @@ Music/*
 *.sublime-workspace
 Crash Logs/*
 App Store Submission/Archived Builds
-*thumbs.db
+\.vs/osu!stream/xs/
+
+
+
+.vs/*
